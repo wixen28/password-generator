@@ -1,0 +1,334 @@
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(12, 22, 41);
+    height: 100vh;  
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+}
+.pass-div {
+    background-color: #1F2937;
+    margin: 100px;
+    width: 550px;
+    height: 550px;
+    border-radius: 6px;
+    border: 2px solid white;
+    overflow-x: hidden;
+}
+
+
+h1 {
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 105px;
+    margin-left: 52px;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+span {
+    color: #4ADF86;
+}
+
+ #paragraph1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #D5D4D8;
+    font-size: 20px;
+    margin-top: 0;
+    margin-left: 52px;
+}
+
+#button {
+    display: flex;
+    margin-left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 10px 17px;
+    color: #fff;
+    background-color: #10B981;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: #1ed195;
+}
+
+hr {
+    width: 446px;
+    margin-top: 35px;
+    margin-left: 52px;
+    border-color: #475e80;  
+}
+
+.both-pass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#first-pass {
+    background-color: #273549;
+    border-radius: 6px;
+    margin-top: 35px;
+    width: 200px;
+}
+
+#first-pass-p {
+    width: 180px;
+    height: 15px;
+    color: #55F991;
+    font-size: 14px;
+    padding: 2px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#second-pass {
+    width: 200px;
+    background-color: #273549;
+    border-radius: 6px;
+    margin-top: 35px;
+}
+
+#second-pass-p {
+    width: 180px;
+    height: 15px;
+    color: #55F991;
+    font-size: 14px;
+    padding: 2px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#copy-button1 {
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 17px;
+    color: #fff;
+    background-color: #10B981;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+#copy-button2 {
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 17px;
+    color: #fff;
+    background-color: #10B981;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+#copy-button1:hover {
+    background-color: #1ed195;
+}
+
+#copy-button2:hover {
+    background-color: #1ed195;
+}
+
+
+/* Start of media query*/
+@media ( max-width: 675px){
+    body {
+        overflow-y: auto;
+        max-width: 768px;
+    }
+
+    .pass-div {
+        width: 300px;
+    }
+    .header {
+        font-size: 20px;
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    span {
+        font-size: 20px;
+    }
+
+    #paragraph1 {
+        max-width: 200px;
+        font-size: 15px;
+    }
+
+    #button {
+        width: 120px;
+        font-size: 15px !important;
+        margin-top: 5px !important;
+        padding: 5px !important;
+        margin-left: 50px;
+    }
+    hr {
+        display: flex;
+        width: 90% !important;
+        margin-left: auto !important;
+    }
+
+    .both-pass {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    #first-pass {
+        width: 200px;
+        background-color: #273549;
+        border-radius: 6px;
+        margin-top: 35px;
+
+    }
+
+    #second-pass {
+        width: 200px;
+        background-color: #273549;
+        border-radius: 6px;
+        margin-top: 35px;
+
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #copy-button1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        width: 160px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #10B981;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    
+    #copy-button2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        width: 160px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #10B981;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) and (min-width: 300px){
+
+    .pass-div {
+        max-width: 400px;
+        overflow-y: auto;
+        height: auto;
+    }
+    .header {
+        font-size: 20px;
+        margin-top: 50px;
+        justify-content: center;
+        font-size: 15px;
+        margin-left: 30px;
+    }
+
+    span {
+        font-size: 15px;
+    }
+
+    #paragraph1 {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 200px;
+        font-size: 12px;
+        margin-left: 30px;
+    }
+
+    #button {
+        width: 110px;
+        font-size: 10px !important;
+        margin-top: 20px !important;
+        padding: 5px !important;
+        margin-bottom: 0px;
+        margin-left: 30px;
+    }
+
+    
+    hr {
+        margin-top: 20px;
+
+    }
+
+    .both-pass {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #first-pass {
+        width: 120px;
+        background-color: #273549;
+        border-radius: 6px;
+        margin-top: 35px;
+    }
+
+    #first-pass p {
+        font-size: 11px;
+        display: flex;
+    }
+    #second-pass {
+        width: 120px;
+        background-color: #273549;
+        border-radius: 6px;
+        margin-top: 20px;
+    }
+    #second-pass p {
+        font-size: 10px;
+        display: flex;
+    }
+
+    #copy-button1 {
+        width: 130px;
+        font-size: 8px;
+    }
+
+    #copy-button2 {
+        margin-bottom: 20px;
+        width: 130px;
+        font-size: 8px;
+    }
+}
+
+/* end of media query*/
